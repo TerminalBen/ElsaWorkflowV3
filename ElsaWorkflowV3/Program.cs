@@ -2,6 +2,7 @@ using Elsa.EntityFrameworkCore.Extensions;
 using Elsa.EntityFrameworkCore.Modules.Management;
 using Elsa.Extensions;
 using Elsa.Identity.Features;
+using ElsaWorkflowV3.Activities;
 using Microsoft.AspNetCore.Builder;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -27,6 +28,10 @@ builder.Services.AddElsa(elsa =>
 
     // Use default authentication (JWT + API Key).
     elsa.UseDefaultAuthentication(auth => auth.UseAdminApiKey());
+    //elsa.UseDefaultAuthentication();
+
+    elsa.AddActivity<Greeter>();
+    elsa.AddActivity<CreateFolder>();
 });
 
 // Add Razor pages.
