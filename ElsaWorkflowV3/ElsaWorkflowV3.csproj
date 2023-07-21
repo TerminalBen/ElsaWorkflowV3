@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>a08fc0df-f82f-4eb5-beba-19b2c75b5649</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Elsa" Version="3.0.0-rc1" />
+    <PackageReference Include="Elsa.EntityFrameworkCore" Version="3.0.0-rc1" />
+    <PackageReference Include="Elsa.EntityFrameworkCore.Sqlite" Version="3.0.0-rc1" />
+    <PackageReference Include="Elsa.Http" Version="3.0.0-rc1" />
+    <PackageReference Include="Elsa.Identity" Version="3.0.0-rc1" />
+    <PackageReference Include="Elsa.Workflows.Api" Version="3.0.0-rc1" />
+    <PackageReference Include="Elsa.Workflows.Designer" Version="3.0.0-rc1" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.17.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+</Project>
